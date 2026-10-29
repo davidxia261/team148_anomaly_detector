@@ -1,0 +1,38 @@
+#choropleth {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.country {
+    stroke: #fff;
+    stroke-width: 0.5px;
+}
+
+.dropdown-container {
+    margin-bottom: 10px;
+}
+
+#username {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.legend text {
+    font-size: 8px;
+}
+
+.d3-tip, #tool-tip {
+    line-height: 1.4;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Opioid Prescription Anomaly Detector</h1>
+    <p>Explore potential anomalies in opioid prescribing across the United States.</p>
+
+    <div class="dropdown-container">
+        <label for="metricDropdown">Select Metric: </label>
+        <select id="metricDropdown">
+            <option value="prescriptions">Prescription Volume</option>
+            <option value="anomalies">Potential Anomalies</option>
+        </select>
+    </div>
+
+    <div id="details">
+        <h3>State Details</h2>
+        <p>Hover over a state to view its information.</p>
+    </div>
+
+    <svg id="choropleth"></svg>
+
+    <script src="lib/d3.v5.min.js"></script>
+    <script src="lib/d3-dsv.min.js"></script>
+    <script src="lib/d3-geo-projection.v2.min.js"></script>
+    <script src="lib/d3-legend.min.js"></script>
+    <script src="lib/topojson.v2.min.js"></script>
+    <script src="lib/d3-tip.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
